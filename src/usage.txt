@@ -1,0 +1,9 @@
+usage: ./my_sudo -h
+usage: ./my_sudo [-ugEs] [command [args ...]]
+
+
+Options:
+  -u : Run the command as a user other than the default target user (usually root).
+  -g : Run the command with the primary group set to group instead of the primary group specified by the target user's password database entry.
+  -E : Indicates to the security policy that the user wishes to preserve their existing environment variables.
+  -s : Run the shell specified by the SHELL environment variable if it is set or the shell specified by the invoking user's password database entry.
